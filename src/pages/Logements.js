@@ -8,6 +8,8 @@ import Tags from "../components/Tags/Tags";
 
 
 
+
+
 const Logements = () => {
 
     const { id } = useParams()
@@ -16,7 +18,9 @@ const Logements = () => {
     )
 
     return (
+        
         <div>
+
             <Header/>
             <Carrousel
                 images={logementActif.pictures}
@@ -27,15 +31,12 @@ const Logements = () => {
             <Tags        
                 tags={logementActif.tags} 
                 id={logementActif.id} />
+            
 
-
-            {/* <div className="housing-ratting-host">
-            <Rating rating={housing.rating} />
-            <Host name={housing.host.name} picture={housing.host.picture} />
-            </div> */} 
-
+            
 
             </main>  
+            
             <Footer/>
         </div>
     );

@@ -1,8 +1,8 @@
-/* 
-.full-star {
-    color: var(--primary-orange);
+.rating {
+    display: flex;
+    justify-content: space-between;
 }
 
-.empty-star {
-    color: var(--grey);
-} */
+    .stars-rating {
+        width: 40px;
+    }

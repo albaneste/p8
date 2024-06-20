@@ -1,20 +1,22 @@
-// import React from 'react';
-// import './rating.css';
+import './rating.css';
+import starempty from "../../images/starempty.png";
+import starfull from "../../images/starfull.png";
 
-// const Rating = ({ rating }) => {
-//   const fullStars = Math.floor(rating);
-//   const emptyStars = 5 - fullStars;
+function rating({stars}) {
+    const stars = [1, 2, 3, 4, 5];
 
-//   return (
-//     <div className="rating">
-//       {[...Array(fullStars)].map((_, index) => (
-//         <i key={index} className="fas fa-star full-star"></i>
-//       ))}
-//       {[...Array(emptyStars)].map((_, index) => (
-//         <i key={index} className="fas fa-star empty-star"></i>
-//       ))}
-//     </div>
-//   );
-// };
+    return (
+        <div className="rating">
+            {stars.map((star) =>
+                stars.rating >= star ? 
+                (   <img className="stars-rating" key={star} src={starfull} alt="" /> ) 
+                :
+                 ( <img className="stars-rating" key={star} src={starempty} alt="" /> )
+                   
+               
+            )}
+        </div>
+    );
+};
 
-// export default Rating;
+export default rating;
