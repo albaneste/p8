@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+  }
+
+.logo:hover {
+    cursor: pointer;
+}  
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-txt {
+    font-size: 24px;
+    color: black;
+    margin-left: 55px;
+}
+
+.nav-txt:hover {
+    cursor: pointer;
+  }
+
+.active {
+    text-decoration: underline;
+    color: black;
+  }
+

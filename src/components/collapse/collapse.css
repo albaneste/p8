@@ -1,0 +1,48 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 70%;
+    height: 50px;
+    background-color: #ff6060;
+    border-radius: 5px;
+    padding: 0px 11px 0px 11px;
+    cursor: pointer;
+}
+
+.hidden {
+    width: 70%;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+.collapse h3 {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.7rem;
+}
+
+.arrowup {
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.content {
+    font-size: 17px;
+    margin: 12px;
+}

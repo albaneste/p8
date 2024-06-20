@@ -1,0 +1,55 @@
+.carrousel{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 415px;
+    margin-top: 50px;
+}
+
+.arrowleft{
+    left: 5%;   
+    position: absolute;
+    top: 42%;
+    width: 90px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrowright{
+    right: 5%; 
+    position: absolute;
+    top: 42%;
+    width: 90px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 1;  
+}
+
+.slider{
+    object-fit: contain;
+    position: relative;
+    height: 415px;
+}
+
+.slider-active{
+    width: 90%;
+}
+
+.slider-image{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+        
+.slider-number{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    z-index: 1;
+    color: white;
+    align-items: end;
+
+}
+    

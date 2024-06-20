@@ -1,0 +1,27 @@
+.erreur {
+    text-align: center;
+    color: #ff6060;
+  }
+  
+.titre {
+    font-weight: 700;
+    font-size: 250px;
+    margin-top: 40px;
+ }
+  
+.message {
+    font-size: 30px;
+    font-weight: 500;  
+    margin-top: 40px;
+}
+  
+.retour {
+    text-decoration: underline;
+    color: black;
+    margin-top: 50px;
+    font-size: 15px;
+}
+  
+  
+  
+  

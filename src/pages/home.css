@@ -1,0 +1,10 @@
+.cards {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px;
+    margin: auto;
+    padding: 55px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+}

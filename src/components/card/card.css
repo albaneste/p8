@@ -1,0 +1,36 @@
+
+.logement {  
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.logement:hover {
+    cursor: pointer;
+} 
+
+h2 {
+    position: absolute;
+    width: 50%;
+    font-size: 15px;
+    z-index: 1;
+    left: 20px;
+    bottom: 10px;
+    color: white;
+}
+    
+.preview {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+    
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+
