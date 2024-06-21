@@ -1,10 +1,12 @@
-// import './host.css'
+import './host.css'
 
-// export default function Host({name, picture}) {
-//   return (
-//     <div className="host">
-//       <h3>{name}</h3>
-//       <img src={picture} alt={name}/>
-//     </div>
-//   )
-// }
+function Host({ host }) {
+    return (
+      <div className="host-container">
+        <div className="host-name">{host.name}</div>
+        <img className="host-picture" src={host.picture} alt={host.name} />
+      </div>
+    )
+  }
+  
+  export default Host

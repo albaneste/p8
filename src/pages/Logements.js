@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom';
 import data from "../data/index.json";
 import './logements.css';
 import Tags from "../components/Tags/Tags";
+import Rating from "../components/rating/Rating";
+import Host from "../components/host/Host";
 
 
 
@@ -31,12 +33,11 @@ const Logements = () => {
             <Tags        
                 tags={logementActif.tags} 
                 id={logementActif.id} />
-            
-
-            
-
             </main>  
+            <Host host={logementActif.host} />
+            <Rating rating={logementActif.rating} />
             
+
             <Footer/>
         </div>
     );
