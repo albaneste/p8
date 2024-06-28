@@ -8,3 +8,21 @@
     border-radius: 25px;
     background-color: #F6F6F6;
 }
+
+@media screen and (max-width: 768px) {
+    .cards {
+        padding: 35px;
+        gap: 40px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0;  
+        background-color: white;  
+        gap: 20px;
+        border-radius: 10px;  
+    }
+  }

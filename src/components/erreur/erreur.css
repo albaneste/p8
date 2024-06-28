@@ -22,6 +22,34 @@
     font-size: 15px;
 }
   
-  
+@media screen and (max-width: 768px) {
+    .titre {
+        font-size: 200px;
+     }
+      
+    .message {
+        font-size: 25px;
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .titre {
+        font-size: 100px;
+        margin-top: 40px;
+     }
+      
+    .message {
+        font-size: 18px;
+        font-weight: 500;  
+        margin-top: 40px;
+    }
+      
+    .retour {
+        text-decoration: underline;
+        color: black;
+        margin-top: 50px;
+        font-size: 14px;
+    }
+  }  
   
   

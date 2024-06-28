@@ -7,8 +7,23 @@
   
   .host-name {
     font-size: 18px;
+    width: 80px;
+    text-align: end;
   }
   
   .host-picture {
     border-radius: 50%;
+    height:80px;
   }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .host-name {
+    font-size: 15px;
+    width: 60px;
+  }
+  
+  .host-picture {
+    border-radius: 50%;
+    height: 55px;
+  }
+}  

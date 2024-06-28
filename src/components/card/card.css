@@ -34,3 +34,8 @@ h2 {
     object-fit: cover;
 }    
 
+@media screen and (max-width: 768px) {
+    .preview {
+        height: 280px;
+    }
+  }

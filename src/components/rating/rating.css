@@ -1,3 +1,15 @@
 .stars {
     width: 20px;
+    margin-right: 10px;
 }
+
+.rating {
+    gap: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .stars {
+        width: 15px;
+        margin-right: 8px;
+    }
+}  

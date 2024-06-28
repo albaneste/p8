@@ -13,7 +13,7 @@ const About = () => {
             <Header/>
             <main>
                 <Banner texte="" image={ImageAbout} />
-                <section>
+                <section className="collapse-about">
                     {aboutdata.map(({ id, title, content }) => (
                     <Collapse key={id} title={title} content={content} />
                     ))}
