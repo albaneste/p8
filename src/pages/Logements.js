@@ -17,13 +17,13 @@ const Logements = () => {
 
     const { id } = useParams()
     const logementActif = data.find(
-      (data) => data.id === id
+        (data) => data.id === id
     )
 
     return (
-        
+
         <div>
-            <Header/>
+            <Header />
             <Carrousel
                 images={logementActif.pictures}
                 alt={logementActif.title} />
@@ -32,9 +32,9 @@ const Logements = () => {
                     <div className="titre-lieu-tags">
                         <div className="description">{logementActif.title}</div>
                         <div className="lieu">{logementActif.location}</div>
-                        <Tags        
-                            tags={logementActif.tags} 
-                            id={logementActif.id} />  
+                        <Tags
+                            tags={logementActif.tags}
+                            id={logementActif.id} />
                     </div>
                     <div className="host-rating">
                         <Host host={logementActif.host} />
@@ -52,15 +52,15 @@ const Logements = () => {
                         <Collapse
                             title="Équipements"
                             content={logementActif.equipments.map((item, index) => {
-                                return <div key={(item, index)}>{item}</div>
+                                return <div key={index}>{item}</div>
                             })}
                         />
-                    </div> 
+                    </div>
                 </div>
-            </main>  
-            <Footer/>
+            </main>
+            <Footer />
         </div>
-        
+
     );
 };
 

@@ -16,9 +16,9 @@ const Home = () => {
                 <Banner texte="Chez vous, partout et ailleurs" image={Image} />
                 <section>
                     <div className="cards">
-                        {data.map(({ id, title, cover }) => (
-                            <NavLink to={`/logement/${id}`}>
-                                <Card key={id} title={title} cover={cover} />
+                        {data.map(({ id, title, cover }, index) => (
+                            <NavLink key={index} to={`/logement/${id}`}>
+                                <Card title={title} cover={cover} />
                             </NavLink>
                         ))}
                     </div>
